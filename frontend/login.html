@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Sistema de Autenticação Canva</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <!-- Left Sidebar -->
+    <div class="login-sidebar">
+      <div class="login-sidebar-content">
+        <h1>CADASTRAR</h1>
+        <p>Se você ainda não possui login, selecione uma das opções abaixo.</p>
+        <div class="login-buttons">
+       <button onclick="window.location.href='/cadastro_usuario'">Usuário</button>
+       <button onclick="window.location.href='/cadastro_empresa'">Empresa</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Form Container -->
+    <div class="login-form-container">
+      <!-- Palestine Emblem - Top Right -->
+      <div class="emblem-top-right">
+        <img src="../static/images/canva-logo.png">
+      </div>
+
+      <!-- Canva Logo -->
+      <div class="logo-container">
+        <img src="../static/images/palestine-emblem.png">
+      </div>
+
+      <!-- Login Form -->
+      <div class="form-wrapper">
+        <h2>LOGIN</h2>
+        <form method="POST" action="/login">
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <!-- Password Field -->
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-button">Entrar</button>
+
+          <!-- Footer Text -->
+          <p class="form-footer">
+            Seu nome de perfil no Canva será compartilhado. Nunca envie senhas.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

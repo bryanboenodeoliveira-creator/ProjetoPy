@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.login-sidebar {
+  width: 40%;
+  background-color: #C4A747;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.login-sidebar-content {
+  text-align: center;
+  max-width: 280px;
+}
+
+.login-sidebar-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.login-sidebar-content p {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 64px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.login-buttons button {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 4px solid #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-buttons button:hover {
+  background-color: #f5f5f5;
+}
+
+.login-form-container {
+  width: 60%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  position: relative;
+}
+
+.emblem-top-right {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+}
+
+.emblem-top-right img {
+  height: 112px;
+  width: auto;
+}
+
+.logo-container {
+  margin-bottom: 48px;
+}
+
+.logo-container img {
+  height: 80px;
+  width: auto;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 448px;
+}
+
+.form-wrapper h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 48px;
+}
+
+.form-group {
+  margin-bottom: 32px;
+}
+
+.form-group label {
+  display: block;
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"] {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="tel"]:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #C4A747;
+}
+
+.form-group.gender-group {
+  margin-bottom: 24px;
+}
+
+.gender-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gender-option {
+  display: flex;
+  align-items: center;
+}
+
+.gender-option input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+}
+
+.gender-option label {
+  margin: 0;
+  color: #000000;
+  background-color: #e8e8e8;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #C4A747;
+  color: #000000;
+  font-weight: bold;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+}
+
+.submit-button:hover {
+  background-color: #B39637;
+}
+
+.form-footer {
+  text-align: center;
+  color: #666666;
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.back-link a {
+  color: #C4A747;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Cadastro Pages Styles */
+.cadastro-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.cadastro-sidebar-left {
+  width: 16.67%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.cadastro-sidebar-left img {
+  height: 96px;
+  width: auto;
+}
+
+.cadastro-form-container {
+  width: 66.66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.cadastro-form-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.cadastro-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cadastro-sidebar-right {
+  width: 16.67%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.cadastro-sidebar-right img {
+  height: 112px;
+  width: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .login-sidebar {
+    width: 45%;
+  }
+
+  .login-form-container {
+    width: 55%;
+  }
+
+  .cadastro-sidebar-left,
+  .cadastro-sidebar-right {
+    width: 12%;
+  }
+
+  .cadastro-form-container {
+    width: 76%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-sidebar {
+    width: 100%;
+    padding: 32px;
+  }
+
+  .login-form-container {
+    width: 100%;
+    padding: 32px;
+  }
+
+  .emblem-top-right {
+    position: static;
+    margin-bottom: 24px;
+  }
+
+  .cadastro-container {
+    flex-direction: column;
+  }
+
+  .cadastro-sidebar-left,
+  .cadastro-sidebar-right {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .cadastro-form-container {
+    width: 100%;
+    padding: 32px;
+  }
+
+  .form-wrapper h2,
+  .login-sidebar-content h1 {
+    font-size: 32px;
+  }
+}
